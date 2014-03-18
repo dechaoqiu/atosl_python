@@ -1,0 +1,6 @@
+.DS_Store
+*.o
+*/.DS_Store
+atosl.egg-info/
+build/
+dist/
