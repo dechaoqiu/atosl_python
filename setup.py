@@ -8,7 +8,7 @@ atosl: atos for Linux
 from setuptools import setup
 from distutils.core import setup, Extension
 
-atosl_module = Extension('atosl', sources = ["converter.c", "macho.c", "atosl.c", "python_wrapper.c"])
+atosl_module = Extension('atosl', ["converter.c", "macho.c", "atosl.c", "python_wrapper.c"])
 
 # atosl.symbolicate('armv7s', 'test/res/CrashTest3Dwarf.fat', ("0x00006ed7", ))
 setup(name='atosl',
