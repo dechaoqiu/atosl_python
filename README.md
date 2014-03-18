@@ -9,15 +9,14 @@ sample macho file can be reached at https://github.com/renoqiu/atosl/tree/master
 
 ## INSTALL
 
-1. make
-2. sudo make install
-3. make test
+1. pip install atosl
 
 ## USAGE
 
-1. atosl -arch ARCH -o DWARF_FILE_PATH BINARY_ADDRESS
+    import atosl
+    atosl.symbolicate(arch_str, macho_path, addresses_tuple)
 
 ## EXAMPLE
 
-1. atosl -arch ARMV7S -o ~/TEST 0X00001100 0X00001200
+1. atosl.symbolicate('armv7s', 'test/res/CrashTest3Dwarf.fat', ("0x00006ed7", ))
 
